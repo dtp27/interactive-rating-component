@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactice Rating Component
+# Frontend Mentor - Interactive Rating Component
 
 ---
 
