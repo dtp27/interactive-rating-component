@@ -1,0 +1,110 @@
+/* || General Styles */
+*, 
+*::before.
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-primary: hsl(25, 97%, 53%);
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-medium-grey: hsl(216, 12%, 54%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+    --clr-shaded-dark-blue: hsl(213, 19%, 23%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-very-dark-blue);
+}
+
+footer {
+    color: var(--clr-white);
+    position: absolute;
+    bottom: 2%;
+}
+
+footer a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--clr-white);
+}
+
+/* || Ratings Styles */
+.rating {
+    max-width: 375px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.rating__star {
+}
+
+.rating h1 {
+    color: var(--clr-white);
+}
+
+.rating p {
+    color: var(--clr-medium-grey);
+    line-height: 1.5;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratings__list {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings__list li {
+    list-style: none;
+    color: var(--clr-medium-grey);
+    background-color: var(--clr-shaded-dark-blue);
+    border-radius: 50%;
+    padding: 0.8rem 1.2rem;
+}
+
+.ratings__list li:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.ratings__btn {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: 3rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.ratings__btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+}
+
+.thanks {
+    display: none;
+}
