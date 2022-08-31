@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://github.com/dtp27/interactive-rating-component)
+- Live Site URL: [Add live site URL here](https://dtp27.github.io/interactive-rating-component/)
 
 ## My process
 1. 
