@@ -48,7 +48,7 @@ footer a:hover {
     background-color: var(--clr-dark-blue);
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 .rating__star {
@@ -109,4 +109,37 @@ footer a:hover {
 
 .thanks {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 1.5rem;
 }
+
+.thanks p {
+    color: var(--clr-medium-grey);
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.thanks__img {
+    margin: 1rem 0;
+}
+
+.thanks__rating p {
+    color: var(--clr-primary);
+    background-color: var(--clr-shaded-dark-blue);
+    padding: 0.7rem 1rem 0.3rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+
+.thanks h2 {
+    color: var(--clr-white);
+    text-align: center;
+    margin: 1rem;
+}
+

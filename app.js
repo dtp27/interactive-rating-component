@@ -16,7 +16,7 @@ ratings.button.addEventListener('click', function (e) {
     ratingsNum.textContent = ratings.score;
 
     rating.style.display = "none";
-    thanks.style.display = "block";
+    thanks.style.display = "flex";
 });
 
 
