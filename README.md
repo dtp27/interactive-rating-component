@@ -33,13 +33,19 @@ Users should be able to:
 - Live Site URL: [Add live site URL here](https://dtp27.github.io/interactive-rating-component/)
 
 ## My process
-1. 
+1. Structured the HTML content
+2. Styled the ratings page
+3. Styled the thank you page
+4. Coded the JS for the interactivity
+5. Made minor tweaks to the layout
 
 ### Built with
-- 
+- HTML
+- CSS including Flexbox
+- JS (Vanilla)
 
 ### Challenges
-1. 
+1. Getting the star positioned correctly
 
 ### Useful resources
 
