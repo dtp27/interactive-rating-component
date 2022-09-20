@@ -6,10 +6,12 @@ const ratingBtn = document.querySelector(".ratings__btn");
 const thanksNum = document.querySelector("#thanks__number");
 
 let ratingNum = "";
+ratingBtn.style.opacity = "30%";
 
 for (let option of ratingSelect) {
     option.addEventListener('click', function () {
         ratingNum = option.innerText;
+        ratingBtn.style.opacity = "100%";
     });
 }
 
