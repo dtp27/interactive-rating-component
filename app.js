@@ -1,31 +1,21 @@
-const ratings = {
-    score: "",
-    potentialRatings: document.querySelector(".ratings__list"),
-    button: document.querySelector(".ratings__btn")
-};
-const ratingsNum = document.querySelector(".ratings__number");
-
 const rating = document.querySelector(".rating");
 const thanks = document.querySelector(".thanks");
 
-ratings.potentialRatings.addEventListener('click', function (e) {
-    ratings.score = e.path[0].textContent;
-    e.path[0].style.backgroundColor = "var(--clr-light-grey)";
-    e.path[0].style.color = "var(--clr-white)";
+const ratingSelect = document.querySelectorAll(".ratings__label");
+const ratingBtn = document.querySelector(".ratings__btn");
+const thanksNum = document.querySelector("#thanks__number");
 
-    /* Make sure previous selection is reset to base color scheme */
-    for (let li of e.path[1].children) {
-        li.style.backgroundColor = "var(--clr-shaded-dark-blue)";
-        li.style.color = "var(--clr-medium-grey)";
-    }
+let ratingNum = "";
 
-    e.path[0].style.backgroundColor = "var(--clr-light-grey)";
-    e.path[0].style.color = "var(--clr-white)";
-});
+for (let option of ratingSelect) {
+    option.addEventListener('click', function () {
+        ratingNum = option.innerText;
+    });
+}
 
-ratings.button.addEventListener('click', function (e) {
-    if (ratings.score !== "") {
-        ratingsNum.textContent = ratings.score;
+ratingBtn.addEventListener('click', function () {
+    if (ratingNum !== "") {
+        thanksNum.textContent = ratingNum;
     
         rating.style.display = "none";
         thanks.style.display = "flex";

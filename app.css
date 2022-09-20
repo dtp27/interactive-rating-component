@@ -69,13 +69,8 @@ footer a:hover {
     line-height: 1.5;
 }
 
-.ratings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.ratings__list {
+.ratings__select {
     width: 100%;
     padding-left: 0;
     display: flex;
@@ -83,7 +78,7 @@ footer a:hover {
     margin: 2rem 0 1rem 0;
 }
 
-.ratings__list li {
+.ratings__select label {
     list-style: none;
     color: var(--clr-medium-grey);
     background-color: var(--clr-shaded-dark-blue);
@@ -91,14 +86,20 @@ footer a:hover {
     padding: 0.8rem 1.2rem;
 }
 
-.ratings__list li:hover {
+.ratings__select label:hover {
     background-color: var(--clr-primary);
+    color: var(--clr-white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ratings__option:checked + .ratings__label {
+    background-color: var(--clr-light-grey);
     color: var(--clr-white);
 }
 
-.ratings__list li:focus {
-    background-color: var(--clr-light-grey);
-    color: var(--clr-white);
+.ratings__select input {
+    display: none;
 }
 
 .ratings__btn {
@@ -115,6 +116,8 @@ footer a:hover {
 .ratings__btn:hover {
     background-color: var(--clr-white);
     color: var(--clr-primary);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .thanks {
